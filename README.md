@@ -1,5 +1,4 @@
-# Desafio IN8
-
+# Desafio IN8   
 ## Objetivo do desafio
 Acessar o site [Webscraper](https://webscraper.io/test-sites/e-commerce/allinone/computers/laptops), pegue todos os notebooks Lenovo ordenando do mais barato para o mais caro. Pegar todos os dados disponíveis de cada produto. <br><br>
 
@@ -21,3 +20,7 @@ Acessar o site [Webscraper](https://webscraper.io/test-sites/e-commerce/allinone
 
 ### Executar o projeto
 > *npm run start*
+
+<br><br><br><br><br><br>
+
+![in8](https://media.licdn.com/dms/image/C4D0BAQHHnuI1TCClQg/company-logo_200_200/0/1592243495976?e=1681948800&v=beta&t=aupyO7HsGQ2kOHX8t8GckZNOir1yDbKKLaIEcE0CVgg)
