@@ -3,6 +3,6 @@ const router = express.Router();
 
 const roboController = require('./controllers/roboController');
 //get, post, delete, put
-router.get('/oi',roboController.roboPesquisa)
+router.get('/pesquisa',roboController.roboPesquisa)
 
 module.exports = router;

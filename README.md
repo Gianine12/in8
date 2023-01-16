@@ -21,6 +21,17 @@ Acessar o site [Webscraper](https://webscraper.io/test-sites/e-commerce/allinone
 ### Executar o projeto
 > *npm run start*
 
+<br><br>
+
+#
+## EndPoint
+
+Endereço: [http://localhost:3333/api/pesquisa](http://localhost:3333/api/pesquisa)
+
+<br><br>
+### GET
+* */pesquisa*  **consulta padrão do projeto.**
+
 <br><br><br><br><br><br>
 
 ![in8](https://media.licdn.com/dms/image/C4D0BAQHHnuI1TCClQg/company-logo_200_200/0/1592243495976?e=1681948800&v=beta&t=aupyO7HsGQ2kOHX8t8GckZNOir1yDbKKLaIEcE0CVgg)
