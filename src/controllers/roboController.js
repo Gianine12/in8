@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 
 module.exports = {
   async roboPesquisa(req, res){
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
     const url = `https://webscraper.io/test-sites/e-commerce/allinone/computers/laptops`;
     await page.goto(url);
@@ -15,9 +15,11 @@ module.exports = {
         let img = item.children[0].getAttribute('src');
         let rating =  Number(item.children[2].children[1].getAttribute('data-rating'));
         let price = Number(item.children[1].children[0].innerHTML.replace('$',''));
-        let nameProduct = item.children[1].children[1].querySelector('.title').innerHTML;
+        let nameProduct = item.children[1].children[1].children[0].getAttribute('title');
         let description = item.children[1].querySelector('.description').innerHTML;
         let review = Number(item.children[2].children[0].innerHTML.replace(' reviews', ''));
+
+        console.log(item.children[0])
         
         return {
           img,
@@ -31,7 +33,7 @@ module.exports = {
       return newElement
     })
 
-    await browser.close();
+    // await browser.close();
 
     const filtered = resultado.filter((item) => {
       if(item.nameProduct.includes('Lenovo')){
